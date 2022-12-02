@@ -23,6 +23,11 @@
   padding: 40px;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 300ms linear;
+
+  @media screen and (max-width: 1200px) {
+    width: 450px;
+    height: 609px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -62,6 +67,11 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 20px;
+    line-height: calc(30 / 20);
+  }
 }
 
 .input-wrap {
@@ -148,12 +158,19 @@
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   align-items: center;
+  margin-right: auto;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
 }
 
 .check-text span {
@@ -179,6 +196,7 @@
 .polici-link {
   text-decoration-line: underline;
   color: #2196f3;
+  margin-left: 5px;
 }
 
 .button-modal {

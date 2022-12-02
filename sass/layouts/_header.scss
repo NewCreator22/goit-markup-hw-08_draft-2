@@ -35,6 +35,7 @@
 .header-contact {
   display: block;
   margin-left: auto;
+
   // display: flex;
   // gap: 10px;
   // flex-direction: column;
@@ -64,6 +65,10 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   margin-right: 93px;
+
+  @media screen and (max-width: 768px) {
+    margin-right: 276px;
+  }
 }
 
 .header-logo-Studio {
@@ -168,16 +173,9 @@
 // ------menu-----
 
 .menu-open {
-  margin-left: auto;
-}
-
-.menu-open {
   padding: 0;
   background-color: transparent;
   border: 0;
-  position: absolute;
-  // top: 10px;
-  right: 15px;
 
   @media screen and (min-width: 768px) {
     display: none;
