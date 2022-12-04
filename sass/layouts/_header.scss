@@ -6,13 +6,13 @@
   height: 80px;
   border: 1px solid #eeeeee;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     height: 60px;
     display: flex;
     align-items: center;
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     padding-top: 21px;
     padding-bottom: 21px;
   }
@@ -27,7 +27,7 @@
   display: flex;
   gap: 50px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -47,7 +47,7 @@
     align-items: center;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
@@ -66,8 +66,8 @@
   color: var(--accent-color);
   margin-right: 93px;
 
-  @media screen and (max-width: 768px) {
-    margin-right: 276px;
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
   }
 }
 
@@ -134,7 +134,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.16;
     margin: 0;
@@ -150,7 +150,7 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1199px) {
     font-size: 12px;
     line-height: 1.16;
     margin-top: 9px;
@@ -193,21 +193,18 @@
 }
 
 .mob-menu {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: var(--primary-text-color);
   top: 0;
+  left: 0;
   position: fixed;
   z-index: 1;
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
-  // > .container-mob {
-  //   height: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-  // }
+  display: flex;
+  flex-direction: column;
 }
 
 .menu-close {
@@ -239,8 +236,8 @@
   }
 }
 
-.mob-menu-list {
-  margin-bottom: 306px;
+.mob-menu-top {
+  margin-bottom: auto;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -288,6 +285,7 @@
 .mob-soc {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .mob-soc-item {
@@ -317,13 +315,8 @@
   width: 1px;
   height: 22px;
   background-color: #212121;
+}
 
-  // position: absolute;
-  // width: 22px;
-  // height: 0px;
-  // left: 135px;
-  // top: 726px;
-
-  // border: 1px solid rgba(33, 33, 33, 0.2);
-  // transform: rotate(90deg);
+.mob-menu-list .current {
+  color: var(--accent-color);
 }
